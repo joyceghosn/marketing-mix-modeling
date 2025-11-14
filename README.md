@@ -1,6 +1,6 @@
 # Marketing Mix Modeling (MMM) – Sales & Media Effectiveness
 
-## 📌 Project Overview
+##  Project Overview
 
 This project builds and compares several **Marketing Mix Models (MMM)** to understand how different media channels (Google, Facebook, Email, Affiliate) and organic activity contribute to weekly sales.
 
@@ -18,7 +18,7 @@ The goal is to:
 
 ---
 
-## 🗂 Dataset
+## Dataset
 
 - File: `cleaned_with_spend.csv`  
 - Size: 3,051 rows × 17 columns  
@@ -35,7 +35,7 @@ The goal is to:
 
 ---
 
-## 🧱 Project Structure
+## Project Structure
 
 - `lightweightMMMpart(1).ipynb`  
   *Data loading, preprocessing, scaling, and first LightweightMMM setup.*
@@ -60,7 +60,7 @@ You can follow the project in this logical order:
 
 ---
 
-## 🧠 Techniques Used
+## Techniques Used
 
 ### Data Preparation & Feature Engineering
 - Time-indexing by `calendar_week`
@@ -106,7 +106,7 @@ You can follow the project in this logical order:
 
 ---
 
-## 📊 Key Results & Insights
+## Key Results & Insights
 
 ### 1. Ridge MMM with Adstock, Saturation & Seasonality
 From the optimized Ridge model with interaction terms (see `Ridgelasso.ipynb`):
@@ -155,7 +155,7 @@ This approach gave a **probabilistic view** of media performance instead of sing
 
 ---
 
-## 🎯 Business Takeaways
+##  Business Takeaways
 
 - Facebook and Google tend to be the **key incremental drivers** of sales, but Facebook’s effect is **spiky** and campaign-dependent.  
 - Email performs solidly and may be a **cost-effective, supportive channel**, especially when coordinated with other media.  
@@ -164,7 +164,7 @@ This approach gave a **probabilistic view** of media performance instead of sing
 
 ---
 
-## 🧩 Challenges & Lessons Learned
+##  Challenges & Lessons Learned
 
 - **Environment & dependencies**  
   - Getting the correct versions of `numpy`, `scipy`, `jax`, `jaxlib`, and `lightweight-mmm` to work together required several iterations.
@@ -183,19 +183,19 @@ This approach gave a **probabilistic view** of media performance instead of sing
 
 ---
 
-## 🛠️ Tools & Libraries
+## Tools & Libraries
 
 - **Python**  
 - **pandas**, **numpy**, **scipy**  
 - **scikit-learn** – Ridge/Lasso, metrics, train/test split  
 - **LightGBM** – gradient boosting model  
 - **LightweightMMM** – Bayesian Marketing Mix Modeling  
-- **matplotlib**, **seaborn** (if used) – visualization  
+- **matplotlib**, **seaborn**  – visualization  
 - **Google Colab** – experimentation environment
 
 ---
 
-## 🧠 Skills Demonstrated
+## Skills Demonstrated
 
 - Marketing Mix Modeling (MMM)
 - Bayesian modelling & probabilistic interpretation (LightweightMMM)

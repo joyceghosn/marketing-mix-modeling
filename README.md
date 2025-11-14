@@ -209,7 +209,7 @@ This approach gave a **probabilistic view** of media performance instead of sing
 
 ---
 
-## ✨ About the Author
+##  About the Author
 
 I’m a Master’s student in Data Science, passionate about **analytics, predictive modeling, and data-driven marketing decisions**.  
 This project is part of my ongoing work to connect **statistical modeling** with **real business impact**.

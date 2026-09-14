@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large / regeneratable artifacts (fitted model objects can be hundreds of MB
+# for the Bayesian model -- regenerate by re-running notebook 04)
+*.pkl
+
+# Jupyter
+.jupyter/
+
+# Superseded originals kept locally for reference only -- not part of the
+# clean repo (their content lives on, corrected, in notebooks/00-05 and
+# notebooks/99; the debugging history is in notebooks/99 as-is)
+legacy_originals/
+
+# The project brief itself isn't part of the deliverable repo
+marketing-mix-modeling-brief.md

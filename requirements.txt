@@ -1,0 +1,44 @@
+# Core data / ML stack
+numpy==2.2.6
+pandas==2.2.3
+scipy==1.15.3
+scikit-learn==1.6.0
+statsmodels==0.14.4
+matplotlib==3.9.3
+seaborn==0.13.2
+
+# Gradient boosting (notebooks 02-03)
+lightgbm==4.7.0
+xgboost==3.4.1
+shap==0.52.0
+
+# Bayesian MMM (notebook 04)
+jax==0.11.1
+jaxlib==0.11.1
+numpyro==0.21.0
+arviz==0.21.0
+tensorflow==2.21.0
+absl-py==2.5.0
+immutabledict==4.3.1
+
+# Notebook execution
+jupyterlab==4.2.5
+notebook==7.2.2
+ipykernel==6.29.5
+nbformat==5.10.4
+nbclient==0.10.0
+
+# lightweight-mmm itself is installed separately, see below -- its own
+# published metadata pins matplotlib==3.6.1, seaborn==0.11.1 and an
+# unpinned old tensorflow, none of which have Windows wheels or install
+# cleanly next to the modern stack above. Installing it normally alongside
+# this file makes pip's resolver fail (or silently downgrade matplotlib/
+# seaborn). Install everything above first, then:
+#
+#   pip install --no-deps lightweight-mmm==0.1.9
+#
+# This project also carries a small compatibility patch for this library
+# (mmm/lmmm_compat.py) because it calls jnp.where(condition=, x=, y=) with
+# keyword arguments that current JAX made positional-only. See notebook 04
+# for the full explanation. lightweight-mmm==0.1.9 is pinned intentionally:
+# it is the latest release on PyPI.
